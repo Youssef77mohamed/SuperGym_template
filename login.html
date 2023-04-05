@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="icon" href="content/assets/images/icon/logo.icon">
+    <link rel="stylesheet" href="content/css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="content/css/vendors/all.min.css">
+    <link rel="stylesheet" href="content/css/login.css">
+</head>
+<body>
+    
+    <nav class=" navbar bg-black fixed-top">
+        <div class="container-fluid d-screen">
+        <a class="navbar-brand text-light fs-4" href="index.html"> 
+            <img class="logo-nav" src="content/assets/images/logo/Untitled-1.png">  
+            <b>SUPER GYM</b>
+        </a>
+        
+        <div class="d-flex align-items-center">
+            <div class="navbar-icons ">
+                <span class="upper__nav__icon justify-content-center">
+                    <a class="icon-face text-light size-icons mx-3" href="https://www.facebook.com/"><i class=" fa-brands fa-facebook"></i></a>
+                </span>
+                <span class="upper__nav__icon">
+                    <a class="text-light size-icons mx-3" href="https://www.instagram.com/"><i class=" fa-brands fa-instagram"></i></a>
+                </span>
+                <span class="upper__nav__icon">
+                    <a class="icon-whtss text-light size-icons mx-3" href="https://wa.me/01060271806"><i class="fa-brands fa-whatsapp"></i></a>
+                </span>
+                <span class="upper__nav__icon">
+                    <a class="text-light size-icons mx-3 me-5 " href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </span>
+            </div>
+            <button class=" navbar-toggler bg-light border-3 border-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header ">
+                
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img class="logo-nav" src="content/assets/images/logo/Untitled-1.png"> 
+                SUPER GYM
+            </h5>
+            
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-black">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                <a class="nav-link active text-light ms-3" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light ms-3" href="About-Us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light ms-3" href="Supplements.html">Supplements</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light ms-3" href="join-us.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light ms-3" href="login.html">Login</a>
+                </li>
+            </ul>
+            
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <section class="container-form">
+        <form class="rounded-5 ">
+            <h2 class="text-center text-light text-capitalize mb-5">sign in</h2>
+            <div class="input-box mb-3">
+                
+                <i class="icons fa-regular fa-user"></i>
+                <input placeholder="Username" type="text" class=" mt-3" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="input-box mb-3 ">
+                <i class="icons fa fa-key"></i>
+                <input placeholder="Password" type="password" class="" id="mypassword">
+                <span class="eye" onclick="display()">
+                    <i id="hide1" class="fa-solid fa-eye"></i>
+                    <i id="hide2" class="fa-solid fa-eye-slash"></i>
+                </span>
+            </div>
+                <div class="new-ac fs-5">
+                    <a class="fs-6 text-light" href="Create a new account.html">Create a new account</a>
+                </div>
+            <div class="text-center">
+                <button type="submit" id="btnSub" class="btn-sub text-light">LOGIN</button>
+            </div>
+        </form>
+    </section>
+    <footer class="bg-black mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="text-center mt-5 text-light">
+                        <h2>HOME</h2>
+                        <p class="mt-4"><a class="fs-5" href="index.html">SUPER GYM.com</a></p>
+                        <p><a class="fs-5" href="About-Us.html">Blog</a></p>
+                        <p><a class="fs-5" href="Supplements.html">Shop</a></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="text-center mt-5 text-light">
+                        <h2>GET STARTED</h2>
+                        <p class="mt-4"><a class="fs-5" href="join-us.html">Get a Free Gym Pass</a></p>
+                        <p><a class="fs-5" href="join-us.html">Join a Gym Near You</a></p>
+                        <p><a class="fs-5" href="About-Us.html">Member Center</a></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="text-center mt-5 text-light">
+                        <h2>POLICY</h2>
+                        <p class="mt-4"><a class="fs-5" href="">Terms & Conditions</a></p>
+                        <p><a class="fs-5" href="">Privacy Policy</a></p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <span>
+                        <ul class="footer-last d-md-flex d-sm-block  gap-4 justify-content-center me-4 text-light">
+                            <li>
+                                <p class="mb-sm-0"><i class="fab fa-cc-mastercard"></i></p>
+                            </li>
+                            <li>
+                                <p class="mb-sm-0"><i class="fab fa-cc-paypal"></i></p>
+                            </li>
+                            <li>
+                                <p class="mb-sm-0"><i class="fab fa-cc-visa"></i></p>
+                            </li>
+                            <li>
+                                <p class="mb-sm-0"><i class="fab fa-cc-amex"></i></p>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="content/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="content/js/vendors/all.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="content/js/login.js"></script>
+</body>
+</html>

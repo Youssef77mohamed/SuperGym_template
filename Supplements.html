@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplements</title>
+    <link rel="icon" href="content/assets/images/icon/logo.icon">
+    <link rel="stylesheet" href="content/css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="content/css/vendors/all.min.css">
+    <link rel="stylesheet" href="content/css/style-test.css">
+    <link rel="stylesheet" href="content/css/style-Supplements.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar color-bg fixed-top">
+        <div class="container-fluid d-screen">
+            <a class="navbar-brand text-light fs-4" href="index.html"> 
+                <img class="logo-nav" src="content/assets/images/logo/Untitled-1.png">  
+                
+                <b>SUPER GYM</b>
+            </a>
+        <div class="d-flex align-items-center gap-3">
+            <div id="user-enter" class="text-light d-none">
+                <span>Hello</span>
+            </div>
+            <div class="navbar-icons ">
+                <span class="upper__nav__icon justify-content-center">
+                    <a class="icon-face text-light size-icons fs-2 mx-3" href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                </span>
+                <span class="upper__nav__icon">
+                    <a class="text-light size-icons fs-3 mx-3 fs-2" href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                </span>
+                <span class="upper__nav__icon">
+                    <a class="icon-whtss text-light size-icons mx-3 fs-2" href="https://wa.me/01060271806"><i class='bx bxl-whatsapp' ></i></a>
+                </span>
+                <span class="upper__nav__icon">
+                    <a class="text-light size-icons mx-3 fs-2" href="https://www.youtube.com/"><i class='bx bxl-youtube' ></i></a>
+                </span>
+                
+                <div class="card-shopp text-center">
+                    <i class='bx bxs-basket fs-3 d-block' id="cart-icon"></i><span class="text-light" id="itemincart">0</span><SPan class="me-2 text-warning">EGP</SPan>
+                </div>
+                <!-- cart -->
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <!-- content -->
+                    <div class="cart-content">
+                        
+                    </div>
+                    <!-- total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">0EGP</div>
+                    </div>
+                    <button type="button" class="btn-buy"> Buy Now</button>
+                    <!-- cart Close -->
+                    <i class='bx bx-x' id="cart-close" ></i>
+                </div>
+            </div>
+            <button class=" navbar-toggler bg-light border-3 border-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            
+                <span class="navbar-toggler-icon "></span>
+            </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header ">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <img class="logo-nav" src="content/assets/images/logo/Untitled-1.png"> 
+                    SUPER GYM
+                </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body color-bg">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                <a class="nav-link active text-light ms-3" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light ms-3" href="About-Us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light ms-3" href="#">Supplements</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light ms-3" href="join-us.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light ms-3" href="login.html">Login</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        
+    </nav>
+    <section class="container mt-100">
+        <div class="col-12">
+            <div class="card-logo-sup mt-100 mb-5 d-flex justify-content-center">
+                <img class="w-25" src="content/assets/images/Untitled-1.png">
+            </div>
+        </div>
+        <ul class="mb-5 nav nav-tabs border-warning d-flex justify-content-between " id="myTab" role="tablist">
+            <li class="nav-item " role="presentation">
+                <button class="nav-link nav-item-color active text-light" id="weight1-tab" data-bs-toggle="tab" data-bs-target="#weight1-tab-pane" type="button" role="tab" aria-controls="weight1-tab-pane" aria-selected="true">Weight Gaining</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-item-color text-light" id="weight2-tab" data-bs-toggle="tab" data-bs-target="#weight2-tab-pane" type="button" role="tab" aria-controls="weight2-tab-pane" aria-selected="false">Weight Loss</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-item-color text-light" id="Muscle-tab" data-bs-toggle="tab" data-bs-target="#Muscle-tab-pane" type="button" role="tab" aria-controls="Muscle-tab-pane" aria-selected="false">Muscle Building</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-item-color text-light" id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab" aria-controls="health-tab-pane" aria-selected="false">Health & Wellness</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-item-color text-light" id="recovery-tab" data-bs-toggle="tab" data-bs-target="#recovery-tab-pane" type="button" role="tab" aria-controls="recovery-tab-pane" aria-selected="false">Recovery</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-item-color text-light" id="pre-tab" data-bs-toggle="tab" data-bs-target="#pre-tab-pane" type="button" role="tab" aria-controls="pre-tab-pane" aria-selected="false">Pre Workout</button>
+            </li>
+            
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="weight-gaining tab-pane fade show active" id="weight1-tab-pane" role="tabpanel" aria-labelledby="weight1-tab" tabindex="0"> 
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="weight1 mt-4">
+                                    <div class="btn-sup text-center mt-2">
+                                        <div class="weight1-img">
+                                            <img class="product-img rounded-3 img-fluid" 
+                                                src="content/assets/images/supplements/weight gaining/Commandos-chocolate.jpg">
+                                                <p class="product-title text-light">Commandos Re-Load Weight Gainer 5 kg chocolate</p>
+                                            <h3 class="product-price text-light">600EGP</h3>
+                                            <button class="add-cart rounded-1" onclick="itemInCart">Buy<span><i class='bx bx-cart-alt fs-4'></i></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="weight1 mt-4 ">
+                                    <div class="btn-sup text-center mt-2">
+                                        <img class="product-img rounded-3 img-fluid" 
+                                            src="content/assets/images/supplements/weight gaining/Commandos-strawberry.jpg">
+                                        <p class="product-title text-light">Commandos Re-Load Weight Gainer 5 kg strawberry</p>
+                                        <h3 class="product-price text-light"> 600EGP</h3>
+                                        <button class="add-cart rounded-1" onclick="itemInCart">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="weight1 mt-4">
+                                    <div class="btn-sup text-center mt-2">
+                                        <img class="product-img rounded-3 img-fluid" 
+                                            src="content/assets/images/supplements/weight gaining/jkkk.jpg">
+                                        <p class="product-title text-light">Challenger Nutrition Thunder Gain-16Serv.-5.443G-Strawberry</p>
+                                        <h3 class="product-price text-light">1350EGP</h3>
+                                        <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="weight1 mt-4 mb-5">
+                                    <div class="btn-sup text-center mt-2">
+                                        <img class="product-img rounded-3 img-fluid" 
+                                            src="content/assets/images/supplements/weight gaining/kkgjhiu.jpg">
+                                        <p class="product-title text-light">Challenger Nutrition Thunder Gain-16Serv.-5.443G-chocolate</p>
+                                        <h3 class="product-price text-light">1350EGP</h3>
+                                        <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                              
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="weight1 mt-4 mb-5">
+                                    <div class="btn-sup text-center mt-2">
+                                        <img class="product-img rounded-3 img-fluid" 
+                                            src="content/assets/images/supplements/weight gaining//WhatsApp-Image-2022-04-04-at-5.35.13-PM-500x500.jpg">
+                                        <p class=" product-title text-light">MRE GAINER Fudge Brownie 3400g + Work Out Belt</p>
+                                        <h3 class="product-price text-light">1620EGP</h3>
+                                        <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                              
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="weight1 mt-4 mb-5">
+                                    <div class="btn-sup text-center mt-2">
+                                        <img class="product-img rounded-3 img-fluid" 
+                                            src="content/assets/images/supplements/weight gaining/WhatsApp-Image-2022-04-04-at-5.35.44-PM-500x500.jpg">
+                                        <p class="product-title text-light">MRE GAINER Peanut Butter Cookie 3400g</p>
+                                        <h3 class="product-price text-light">1620EGP</h3>
+                                        <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="weight-loss tab-pane fade" id="weight2-tab-pane" role="tabpanel" aria-labelledby="weight2-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1  mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/weight loss/b3753a1d-aad5-4536-be76-0a4b0f974ed4-500x500.jpg">
+                                <p class="product-title text-light">Nutrex Research Lipo 6 Black Men Ultra Concentrate</p>
+                                <h3 class="product-price text-light"> 700EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2"><i class='bx bx-cart-alt fs-4'></i></span></button>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4 ">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/weight loss/Bpi-Sports-LIQUID-Carnitine-473Ml-30Serv-500x500.jpg">
+                                <p class="product-title text-light">BPI Liquid Carnitine 473Ml-30 Servings Fruit Punch</p>
+                                <h3 class="product-price text-light">700EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2"><i class='bx bx-cart-alt fs-4'></i></span></button>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/weight loss/e5c4a16-d11e-4c57-af7d-dc4696377ec0-500x500.jpg">
+                                <p class="product-title text-light">Nutrex Research Lipo 6 Black Hers Ultra Concentrate</p>
+                                <h3 class="product-price text-light">700EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2"><i class='bx bx-cart-alt fs-4'></i></span></button>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/weight loss/jjfghi.jpg">
+                                <p class="product-title text-light">Nutrex Research Lipo 6 Cla ( 90 Softgels )</p>
+                                <h3 class="product-price text-light">550EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2"><i class='bx bx-cart-alt fs-4'></i></span></button>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/weight loss/kujbn.jpg">
+                                <p class="product-title text-light">Lipo 6 Carnitine 120 Liquid Capsules</p>
+                                <h3 class="product-price text-light">600EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2"><i class='bx bx-cart-alt fs-4'></i></span></button>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Muscle-Building tab-pane fade" id="Muscle-tab-pane" role="tabpanel" aria-labelledby="Muscle-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1  mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/859400007580_1-500x500.jpg">
+                                <p class="product-title text-light">Nutrex isofit 2K Chocolate 70 servings</p>
+                                <h3 class="product-price text-light">2750EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4 ">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/jjjjjjjjjj.jpg">
+                                <p class="product-title text-light">Nutrex Isofit 2k Vanilla 70 servings</p>
+                                <h3 class="product-price text-light">2750EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/chocolate-shake-isofit-500x500.jpg">
+                                <p class="product-title text-light">Nutrex Isofit Chocolate Shake 30 Servings</p>
+                                <h3 class="product-price text-light">1500EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/iso-unflavored-500x500.jpg">
+                                <p class="product-title text-light">NOW – WHEY Protein isolate. 81 Servings Unflavored</p>
+                                <h3 class="product-price text-light">2400EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/ISO-500G-500x500.jpg">
+                                <p class="product-title text-light">NOW – WHEY Protein isolate.500g Unflavored</p>
+                                <h3 class="product-price text-light">690EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/pea-vegan-500x500.jpg">
+                                <p class="product-title text-light">NOW – Pea Protein Powder 27 Servings – Unflavored</p>
+                                <h3 class="product-price text-light">585EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/Untitled-1x-500x500.jpg">
+                                <p class="product-title text-light">NUTREX BCAA 6000 30 serving ( Green apple )</p>
+                                <h3 class="product-price text-light">525EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/Untitled-1x-500x500-1.jpg">
+                                <p class="product-title text-light">NUTREX BCAA 6000 30 serving ( Watermelon )</p>
+                                <h3 class="product-price text-light">525EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/Untitled-2-500x500.jpg">
+                                <p class="product-title text-light">NUTREX BCAA 6000 30 serving ( fruit punch )</p>
+                                <h3 class="product-price text-light">525EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/Gold-standr-strawberry--500x500.jpg">
+                                <p class="product-title text-light">Optimum Nutrition Whey Gold Standard strawberry 2 k</p>
+                                <h3 class="product-price text-light">2400EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/WhatsApp-Image-2022-04-04-at-5.38.36-PM-500x500.jpg">
+                                <p class="product-title text-light">MRE LITE Oatmeal Chocolate Chip 800g</p>
+                                <h3 class="product-price text-light">1100EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/WhatsApp-Image-2022-04-04-at-5.39.35-PM-500x500.jpg">
+                                <p class="product-title text-light">MRE LITE Strawberry Shortcake 800g</p>
+                                <h3 class="product-price text-light">1100EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/WhatsApp-Image-2022-04-04-at-5.40.21-PM-500x500.jpg">
+                                <p class="product-title text-light">MRE LITE Peanut Butter Cookie 800g</p>
+                                <h3 class="product-price text-light">1100EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/Muscle Building/WhatsApp-Image-2022-04-04-at-9.16.57-PM-500x500.jpg">
+                                <p class="product-title text-light">ISOTOP 5LB PEANUT BUTTER CHO</p>
+                                <h3 class="product-price text-light"> 2150EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="health-wellness tab-pane fade" id="health-tab-pane" role="tabpanel" aria-labelledby="health-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1  mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/health & wellness/69273a3c-da1e-4518-bcfa-ec6a1793d24b-500x500.jpg">
+                                <p class="product-title text-light">WIND MILL Zinc ( 50 mg ) 100 tab</p>
+                                <h3 class="product-price text-light">425EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4 ">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/health & wellness/Animal-Pak-Multivitamin-1-500x500.jpg">
+                                <p class="product-title text-light">Universal Animal Flex 44 packs</p>
+                                <h3 class="product-price text-light">850EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/health & wellness/d19825e-5761-442d-b8c8-a45f0a05d858-500x500.jpg">
+                                <p class="product-title text-light">WIND MILL Vitamin (C -1000 ) 100 tab</p>
+                                <h3 class="product-price text-light">450EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/health & wellness/e37e014-a206-4003-80dd-cbc8a4aec946-500x500.jpg">
+                                <p class="product-title text-light">Sunshine Vitamin D 3 ( 250 mcg ) 60 tab</p>
+                                <h3 class="product-price text-light">400EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/health & wellness/Optimum-Nutrition-Opti-Women-60Serv-500x500.jpg">
+                                <p class="product-title text-light">Optimum Nutrition Opti-Women-60Serv.-120Caps.</p>
+                                <h3 class="product-price text-light">750EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/health & wellness/Vitamin-D3-500x500.jpg">
+                                <p class="product-title text-light">WIND MILL Vitamin( D-3) 5000 (125mcg) 60 tab</p>
+                                <h3 class="product-price text-light">300EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/health & wellness/Vitamin-e-1-500x500.jpg">
+                                <p class="product-title text-light">WIND MILL Vitamin E 1000( 450 mg ) 30 tab</p>
+                                <h3 class="product-price text-light">300EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/health & wellness//ZMA-500x500.jpg">
+                                <p class="product-title text-light">NOW- ZMA 90 CAPS</p>
+                                <h3 class="product-price text-light">620EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recovery tab-pane fade" id="recovery-tab-pane" role="tabpanel" aria-labelledby="recovery-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1  mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/recovery/564-500x500.jpg">
+                                <p class="product-title text-light">bpi Sports Best BCAA (Fruit Punch 30 serve)</p>
+                                <h3 class="product-price text-light">350EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4 ">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/recovery/6-500x500.jpg">
+                                <p class="product-title text-light">MUSCLE PHARM GLUTAMINE.300g</p>
+                                <h3 class="product-price text-light">375EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/recovery/Animal-Pak-Multivitamin-1-500x500 (1).jpg">
+                                <p class="product-title text-light">Universal Animal Flex 44 packs</p>
+                                <h3 class="product-price text-light">850EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/recovery/glutamine-powder-uni-1-500x500.jpg">
+                                <p class="product-title text-light">Universal Glutamine 300g</p>
+                                <h3 class="product-price text-light">425EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/recovery/NutreX_Glutamine_Drive_300g-500x500.jpg">
+                                <p class="product-title text-light">Nutrex Research Glutamine Drive</p>
+                                <h3 class="product-price text-light">425EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/recovery/Untitled-1x-500x500-1.jpg">
+                                <p class="product-title text-light">NUTREX BCAA 6000 30 serving ( Watermelon )</p>
+                                <h3 class="product-price text-light">525EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/recovery/Untitled-1x-500x500.jpg">
+                                <p class="product-title text-light">NUTREX BCAA 6000 30 serving ( Green apple )</p>
+                                <h3 class="product-price text-light">525EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/recovery/Untitled-2-500x500.jpg">
+                                <p class="product-title text-light">NUTREX BCAA 6000 30 serving ( fruit punch )</p>
+                                <h3 class="product-price text-light">525EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pre-workout tab-pane fade" id="pre-tab-pane" role="tabpanel" aria-labelledby="pre-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1  mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/pre workout/beta-500x500.jpg">
+                                <p class="product-title text-light">Now Beta-Alanine (500 g) Powder – 250 Serving</p>
+                                <h3 class="product-price text-light">1400EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4 ">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/pre workout/BPP-Bogy-Pharm-Performance-NO-Premium-Pump-Booster-30Serv.jpg">
+                                <p class="product-title text-light">BPP Bogy Pharm Performance N=O Premium Pump Booster-30Serv.-120Caps</p>
+                                <h3 class="product-price text-light">550EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/pre workout/C4_Original_FP60_Image_500x500.jpg">
+                                <p class="product-title text-light">Cellucor C4 Original Id Pre-Workout Fruit Punch 60 serving</p>
+                                <h3 class="product-price text-light">700EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/pre workout/efbb66d3-f681-4e67-8211-5037f752c446-500x500.jpg">
+                                <p class="product-title text-light">Cellucor C4 Original Id Pre-Workout Watermelon – 60 Serv.</p>
+                                <h3 class="product-price text-light">1100EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="weight1 mt-4">
+                            <div class="btn-sup text-center mt-2">
+                                <img class="product-img rounded-3 img-fluid" 
+                                    src="content/assets/images/supplements/pre workout/pwo-cherry-500x500.jpg">
+                                <p class="product-title text-light">Nutriversum PWO 2.0 power blackcurrant (30 serving)</p>
+                                <h3 class="product-price text-light">600EGP</h3>
+                                <button class="add-cart rounded-1">Buy<span class="ms-2 "><i class='bx bx-cart-alt fs-4'></i></span></button>                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="text-center mt-5 text-light">
+                        <h2>HOME</h2>
+                        <p class="mt-4"><a class="fs-5" href="index.html">SUPER GYM.com</a></p>
+                        <p><a class="fs-5" href="About-Us.html">Blog</a></p>
+                        <p><a class="fs-5" href="Supplements.html">Shop</a></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="text-center mt-5 text-light">
+                        <h2>GET STARTED</h2>
+                        <p class="mt-4"><a class="fs-5" href="join-us.html">Get a Free Gym Pass</a></p>
+                        <p><a class="fs-5" href="join-us.html">Join a Gym Near You</a></p>
+                        <p><a class="fs-5" href="About-Us.html">Member Center</a></p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="text-center mt-5 text-light">
+                        <h2>POLICY</h2>
+                        <p class="mt-4"><a class="fs-5" href="">Terms & Conditions</a></p>
+                        <p><a class="fs-5" href="">Privacy Policy</a></p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <span>
+                        <ul class="footer-last d-md-flex d-sm-block  gap-4 justify-content-center me-4 text-light">
+                            <li>
+                                <p class="mb-sm-0"><i class='bx bxl-mastercard'></i></p>
+                            </li>
+                            <li>
+                                <p class="mb-sm-0"><i class='bx bxl-paypal' ></i></p>
+                            </li>
+                            <li>
+                                <p class="mb-sm-0"><i class='bx bxl-visa' ></i></p>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="content/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="content/js/supplement.js"></script>
+</body>
+</html>

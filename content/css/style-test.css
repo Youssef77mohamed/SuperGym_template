@@ -1,0 +1,400 @@
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    --mainColor:rgb(97, 97, 97);
+    --supColor:rgb(204, 67, 67);
+    --white:white;
+    --black:#040404df;
+    --gray:#b0b0b096;
+    --Dark-red:#7b1f29;
+    --dark-gray:  rgb(45, 45, 45);
+
+}
+.color-bg{
+    background-color: var(--black);
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color:var(--black);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--gray);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--mainColor);
+}
+::selection{
+    background-color: #f9c10b;
+    color:rgb(0, 0, 0);
+}
+
+.up{
+    position: fixed;
+    bottom: 10px;
+    right: -40px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.up.show{
+    right: 10px;
+    z-index: 10;
+}
+body{
+    margin: 0px;
+    box-sizing: inherit;
+    background:linear-gradient(to bottom, rgba(93, 93, 93, 0.763) 0%, rgba(81, 81, 81, 0.763) 100%),url(../assets/images/back/bacc.jpg);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* nav  */
+nav .navbar-icons .upper__nav__icon .icon-face:hover{
+    color: rgb(0, 20, 171) !important;
+}
+nav .navbar-icons .upper__nav__icon .icon-whtss:hover{
+    color: rgb(3, 200, 16) !important;
+}
+.logo-nav{
+    width: 40px;
+}
+ul li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 23px;
+}
+.size-icons{
+    font-size: 25px;
+}
+/* header */
+.header__img-first{
+    background: linear-gradient(rgba(73, 73, 73, 0.273), rgba(0, 0, 0, 0.174)),
+                url(../assets/images/slider-home/GYM-Fintess-Banner-Template-PSD-1.jpg);
+                background-position: center;
+    height: 100vh;
+}
+.header__img{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+                url(../assets/images/slider-home/maxresdefault.jpg);
+    height: 100vh;
+    background-position: center;
+}
+.header__img_1{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+                url(../assets/images/slider-home/FB_IMG_1672843689657.jpg);
+    height: 100vh;
+    background-position: center;
+}
+.header__img_2{
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+                url(../assets/images/slider-home/pose-muscle-muscle-rod-press-hd-wallpaper-preview.jpg);
+    height: 100vh;
+    background-position: center;
+}
+.header__img_3{
+    background:linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.5)),
+                url(../assets/images/slider-home/bodybuilding-theme-background-images-wallpaper-preview.jpg);
+    height: 100vh;
+    background-position: center;
+}
+.header__content{
+    height: calc(100vh - (68px + 52px));
+    color: var(--white);
+}
+.carousel-item{
+    background-size: cover;
+}
+.carousel-item .carousel-caption{
+    transform: scale(0);
+    transition: transform 0.6s;
+}
+.carousel-item.active .carousel-caption{
+    transform: scale(1);
+}
+.container a {
+    position: relative;
+    width: 160px;
+    height: 60px;
+    display: inline-block;
+    background: var(--white);
+    margin: 20px;
+    
+}
+.container a::before,
+.container a::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.container a::before,
+.container a::after{
+    background: linear-gradient(45deg,#ffffff,#dc3545);
+}
+
+.container a:hover:before{
+    inset: -3px;
+}
+.container a:hover:after{
+    inset: -3px;
+    filter: blur(10px);
+}
+.container a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: var(--mainColor);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container a span:hover{
+    background: var(--Dark-red);
+}
+.container a span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255,255, 0.075);
+    transform: skew(25deg);
+    border-radius: 40px;
+}
+.icons span,a{
+    font-size: 100px;
+    transition: 0.3s;
+
+    
+}
+.icons span,a:hover{
+    margin-left: 10px;
+}
+.icons span, a:hover{
+    color: var(--supColor) !important;
+    transform: scale(1.1);
+}
+/* home */
+.home{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .img{
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.home .img:hover{
+    transform: scale(1.1);
+
+}
+/* suup and more */
+.custom__content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.custom__btn a{
+    color: #f6b818;
+    font-size: 30px;
+    
+}
+.custom__btn a:hover{
+    color: whitesmoke !important;
+}
+.projects__img{
+    height: 100% !important;
+}
+.projects__img__size{
+    
+    border-radius: 20px;
+    overflow: hidden;
+}
+.projects__image{
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.projects__image:hover{
+    transform: scale(1.2);
+}
+
+.projects__img__size span a:hover {
+    color: #ffffff;
+}
+/* .tread*/
+.tread { 
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tread .card{
+    transition: 0.5s;
+    position: relative;
+    margin-bottom: 15px;
+}
+.tread .card:hover {
+    background-color: var(--gray) !important;
+    transform: scale(0.9);
+    color: white;
+    transform: translate(0px, 50px);
+} 
+.tread .card:hover img {
+    opacity: 0.1;
+    
+}
+.tread-contant{
+    position: absolute;
+    top: 0;
+    display: none;
+    transition: 0.2s;
+    margin-left: 9px;
+    font-weight: bold;
+}
+.tread .card:hover .tread-contant{
+    display: block;
+    opacity: 1;
+    
+}
+/* list--one */
+.cardio-img-title p{
+    top: 0;
+    color: var(--white);
+    background-color: #00000074;
+    width: 30%;
+    opacity: 0;
+    padding-left: 10px;
+    transition: 0.5s;
+    border-radius: 5px;
+
+}
+.cardio-img:hover .cardio-img-title p{
+    opacity: 1;
+}
+.list--one{
+    background-image: url(../assets/images/Once-Upon-A-Time/Untitled-design-2022-08-03T154748.253.png);
+    background-size: cover;
+    margin-top: 50px;
+    background-position: left;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    margin-bottom: 50px;
+    height: 100%;
+    border-radius: 5px;
+}
+.Wise-Man-Said{
+    background-image: url(../assets/images/Once-Upon-A-Time/rony.jpg);
+    background-size: cover;
+    height: 100%;
+    border-radius: 5px;
+}
+.Wise-Man-Said2{
+    background-image: url(../assets/images/Once-Upon-A-Time/cutler.jpg);
+    background-size: cover;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 5px;
+}
+.size{
+    font-size: 80px;
+    color: rgba(128, 128, 128, 0.608);
+}
+
+.small-group{
+    margin-top: 80px;
+}
+.small-group img{
+    height: 100%;
+}
+.bg-content{
+    background-color: rgba(255, 255, 255, 0.66);
+}
+
+@media (max-width:1100px) {
+    .Wise-Man-Said2{
+        background-position-x: center !important;
+    }
+}
+@media (max-width:768px) {
+    .Wise-Man-Said2{
+        margin-top: 30px !important;
+    }
+    .list--one{
+        background-position-x:center !important ;
+    }
+    .cardio-img p{
+        width: 100%;
+    }
+    
+}
+@media (max-width:412px) {
+    .icons-CATEGORIES .icons-CATEGORIES-icon{
+        font-size: 60px;
+    }
+    .icons-CATEGORIES p{
+        font-size: 14px !important;
+        margin-top: 5px !important;
+    }
+    
+    .header__img,
+    .header__img_1,
+    .header__img_2,
+    .header__img_3,
+    .carousel-control-prev,
+    .carousel-control-next
+    {
+        height: 50vh !important;
+        background-repeat: no-repeat;
+        margin-top: 100px;
+    }
+    .header__img-first{
+        height: 50vh !important;
+        background-repeat: no-repeat;
+        margin-top: 100px;
+    }
+}
+@media (max-width: 634px) {
+    .d-screen{
+
+        display: flex;
+        justify-content: space-around !important;
+    }
+    .offcanvas-end{
+        width: 300px !important;
+    }
+}
+
+
+
+
+
+
+

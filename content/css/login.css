@@ -1,0 +1,153 @@
+body{
+    background:linear-gradient(to bottom, rgba(38, 38, 38, 0.515) 0%, rgba(35, 35, 35, 0.614) 100%) 
+    ,url(../assets/images/About-Us/accb2daa_ELE1902_Trainmore_035-min.jpg);
+    background-size: cover;
+}
+:root{
+    --mainColor:rgb(97, 97, 97);
+    --supColor:#cc4342;
+    --white:white;
+    --black:#040404df;
+    --gray:#b0b0b096;
+    --Dark-red:#7b1f29;
+    --dark-gray:  rgb(45, 45, 45);
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color:var(--black);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--gray);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--mainColor);
+}
+::selection{
+    background-color: #f9c10b;
+    color:rgb(0, 0, 0);
+}
+
+nav .navbar-icons .upper__nav__icon .icon-face:hover{
+    color: rgb(0, 20, 171) !important;
+}
+nav .navbar-icons .upper__nav__icon .icon-whtss:hover{
+    color: rgb(3, 200, 16) !important;
+}
+
+.logo-nav{
+    width: 40px;
+}
+ul li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 23px;
+}
+.size-icons{
+    font-size: 25px;
+}
+.icons span, a{
+    transition: 0.2s;
+}
+.icons span,a:hover {
+    color: var(--supColor) !important;
+    transform: scale(1.1);
+}
+.icons span, a:hover {
+    margin-left: 10px;
+}
+/********************************************************************************/
+form{
+    
+    padding: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: auto;
+    margin-top: 200px;
+    background-color: var(--black);
+    margin-bottom: 200px;
+}
+.input-box{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+.input-box input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    margin-bottom: 10px;
+}
+::placeholder{
+    color: var(--white);
+}
+
+.icons{
+    color:#fff ;
+    font-size: 20px;
+}
+.eye{
+    position: absolute;
+    cursor: pointer;
+}
+#hide1{
+    display: none;
+    color: var(--white);
+}
+#hide2{
+    color: var(--white);
+}
+.new-ac{
+    margin-bottom: 20px;
+}
+.new-ac a:hover{
+    color: #f9c10b !important;
+
+}
+.btn-sub{
+    background-color: transparent;
+    border-color: #fff;
+    border-radius: 5px;
+    width: 50%;
+    transition: 0.2s;
+    margin-bottom: 10px;
+    padding: 6px 0px;
+}
+.btn-sub:hover{
+    background-color: var(--Dark-red);
+}
+
+@media (max-width: 634px) {
+    body{
+        background-size: cover;
+        background-position: center;
+    }
+    form{
+        width: 90%;
+    }
+    .d-screen{
+
+        display: flex;
+        justify-content: space-around !important;
+    }
+    .offcanvas-end{
+        width: 300px !important;
+    }
+}
+@media (max-width: 992px) {
+    body{
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+    }
+    form{
+        width: 75%;
+    }
+}

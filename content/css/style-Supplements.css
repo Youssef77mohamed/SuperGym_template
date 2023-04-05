@@ -1,0 +1,222 @@
+
+:root{
+    --white: white;
+    --black:black;
+    --red:red;
+    --sup-color:#f6b818;
+    --brown:rgb(124, 32, 32);
+}
+
+.mt-100{
+    margin-top: 130PX;
+}
+::selection{
+    background-color: #f9c10b;
+    color:rgb(0, 0, 0);
+} 
+/* cart  */
+#cart-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--white);
+    margin-right: 10px;
+    
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -150%;
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.897);
+    box-shadow: -2px solid 4px hsl(0, 4%, 15%, 10%) ;
+    border: 1px solid #f6b7185e ;
+    transition: 1.5s;
+    z-index: 20;
+}
+.cart.active{
+    right: 0 !important;
+    transition: 0.5s;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: var(--white);
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+.detali-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.cart-price{
+    font-weight: 500;
+    color: var(--white);
+
+}
+.cart-quantity{
+    border: 1px solid var(--red);
+    outline-color: var(--red);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color: var(--brown);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.cart-remove:hover{
+    transform: scale(1.2);
+    color: var(--red);
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--white);
+    color: var(--white);
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--brown);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+.btn-buy:hover{
+    background-color: var(--sup-color);
+    color: var(--black);
+}
+#cart-close{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+/*********************************************/
+.nav-item-color{
+    transition: 0.2s;
+}
+.nav-item-color:hover{
+    background-color: var(--sup-color);
+    color:var(--black) !important;
+    transform: scale(1.1);
+    margin-left: 10px;
+    border: none;
+}
+.nav-item-color.active{
+    border: none;
+    background-color: var(--brown) !important;
+    
+}
+.card-shopp{
+    position: fixed;
+    background-color: var(--black);
+    border-radius: 10px;
+    padding: 10px;
+    top: 80px;
+    left:10px ;
+    z-index: 1;
+}
+
+.btn-sup button{
+    border: 0;
+    font-size: 25px;
+    padding: 5px;
+    background-color: var(--sup-color);
+    color: var(--white);
+    transition: 0.5s;
+    display: none;
+    position:fixed;
+    bottom:50%;
+    left: 42%;
+    transition: 0.5s;
+}
+.btn-sup button:hover{
+    background-color: var(--brown);
+    color: var(--white);
+    transform: scale(1.1);
+}
+.weight1{
+    transition: 0.5s;
+}
+.weight1:hover{
+    transform: scale(1.1);
+}
+.weight1:hover button{
+    display:inline-block;
+    
+}
+
+@media (max-width:634px) {
+    .cart{
+        width: 320px;
+    }
+    .d-screen{
+        display: flex;
+        justify-content: space-around !important;
+    }
+    .card-shopp{
+        position: fixed;
+        background-color: var(--black);
+        border-radius: 10px;
+        padding: 10px;
+        top: 150px;
+        left:10px ;
+        z-index: 1;
+    }
+}
+@media (max-width:405px) {
+    .cart{
+        width: 250px;
+    }
+    .card-shopp{
+        position: fixed;
+        background-color: var(--black);
+        border-radius: 10px;
+        padding: 10px;
+        top: 150px;
+        left:10px ;
+        z-index: 1;
+    }
+}
